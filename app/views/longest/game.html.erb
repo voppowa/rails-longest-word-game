@@ -1,0 +1,16 @@
+<div class="center">
+<h1>Longest#game</h1>
+<h2>******** Welcome to the longest word-game !********</h2>
+<p> Here is your grid: </p>
+<h3><%= @grid_value %></h3>
+
+<form action="/score">
+  <label for="words"><h3>What's your best shot ?</h3></label>
+  <input type="text" name="attempt">
+  <input type="hidden" value="<%= @start_time %>" name='start_time'>
+  <input type="hidden" value="<%= @grid_value %>" name='grid'>
+  <input type="submit">
+</form>
+
+</div>
+
